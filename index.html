@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="td-wrp">
+        <h2>My to-do list</h2>
+        <p>Double-click an item to set as complete.</p>
+        <form name="td-form">
+            <input type="text" id="fbox">
+        </form>
+        <div id="control-wrapper">
+            <button id="add-btn" class="td-btn">Add</button>
+            <button id="save-btn" onclick="saveList()" class="td-btn">Save List</button>
+            <button id="clear-btn" onclick="clearSelectedToDoItems()" class="td-btn">Clear Finished</button>
+            <button id="empty-btn" onclick="emptyList()" class="td-btn">Empty List</button>
+        </div>
+        <ol id="todo-list"></ol>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
